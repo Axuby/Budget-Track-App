@@ -1,8 +1,11 @@
-import React from 'react';
+import React from "react";
+import ExpenseList from "./ExpenseList";
+import ExpenseListFilters from './ExpenseListFilters'
+const ExpensifyDashboardPage = () => (
+  <div>
+  <ExpenseListFilters/>
+    <ExpenseList />
 
-  const ExpensifyDashboardPage = () => (
-    <div>
-      <p>eee</p>
-    </div>
-  )
+  </div>
+);
 export default ExpensifyDashboardPage;

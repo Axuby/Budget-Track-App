@@ -261,33 +261,50 @@ import uuid from "uuid";
 //     }
 //   ],
 //   filters: {
-//     text: "",
-//     sortBy: "amount",
-//     startDate: undefined,
-//     endDate: undefined
-//   }
+// //     text: "",
+// //     sortBy: "amount",
+// //     startDate: undefined,
+// //     endDate: undefined
+// //   }
+// // };
+// import React from "react";
+// import ReactDOM from "react-dom";
+
+// const Info = props => (
+//   <div>
+//     <p>Welcome to info</p>
+//     <h2>Info :{props.info}</h2>
+//   </div>
+// );
+
+// const withAdminWarning = WrappedComponent => {
+//   return props => (
+//     <div>
+//       {props.isAdmin && <p>Welcome to wrapped</p>}
+//       <WrappedComponent {...props} />
+//     </div>
+//   );
 // };
-import React from "react";
-import ReactDOM from "react-dom";
 
-const Info = props => (
-  <div>
-    <p>Welcome</p>
-    <h2>Info :{props.info}</h2>
-  </div>
-);
+// const AdminInfo = withAdminWarning(Info);
 
-const withAdminWarning = WrappedComponent => {
-  return props => {
-    <div>
-      <WrappedComponent {...props} />
-    </div>;
-  };
-};
+// const requireAuthentication = WrappedComponent => {
+//   return props => (
+//     <div>
+//       {" "}
+//       <h2>Auth comp</h2>
+//       {props.isAuth ? (
+//         <WrappedComponent {...props} />
+//       ) : (
+//         <p>please login to view the info </p>
+//       )}
+//     </div>
+//   );
+// };
 
-const AdminInfo = withAdminWarning(Info);
+// const AuthInfo = requireAuthentication(Info);
 
-ReactDOM.render(
-  <AdminInfo info="wwwwwwwwwww" />,
-  document.getElementById("app")
-);
+// ReactDOM.render(
+//   <AuthInfo isAuth={false} info="wwwwwwwwwww" />,
+//   document.getElementById("app")
+// );
