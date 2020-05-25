@@ -35,9 +35,9 @@ this.setState(()=> ({
     value={this.props.filters.sortBy} 
     onChange={e => {
       if(e.target.value === 'date'){
-        this.props.dispatch(sortByDate())
+        this.props.dispatch(sortByDate(e.target.value))
       }else if(e.target.value === 'amount'){
-this.props.dispatch(sortByAmount())
+this.props.dispatch(sortByAmount(e.target.value))
       }
 
     }}
