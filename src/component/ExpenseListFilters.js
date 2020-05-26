@@ -48,6 +48,8 @@ this.props.dispatch(sortByAmount(e.target.value))
 <DateRangePicker
 startDate={this.props.filters.startDate}
 endDate={this.props.filters.endDate}
+startDateId="start"
+endDateId="end"
 onDatesChange={this.onDatesChange}
 focusedInput={this.state.calenderFocused}
 onFocusChange={this.onFocusChange}

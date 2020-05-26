@@ -3,8 +3,10 @@ import ExpenseList from "./ExpenseList";
 import ExpenseListFilters from './ExpenseListFilters'
 const ExpensifyDashboardPage = () => (
   <div>
+    
+    <ExpenseList/>
   <ExpenseListFilters/>
-    <ExpenseList />
+ 
 
   </div>
 );
