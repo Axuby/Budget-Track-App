@@ -8,7 +8,14 @@ const Info = () => {
     </div>
   )
 }
+const requireAuth =  (WrappedInfo)=>{
+    return (props)=> (
+        <div>
+            {props.isAuth && <p>You are authenticated!!</p>}
+            <h4>Welcome backs</h4>
+        </div>
+    )
+}
 
-
-const AUthInfo = 
+const AUthInfo = requireAuth()
 ReactDom.render(<AUthInfo  isAuth={false}/>,document.getElementById('app'))
