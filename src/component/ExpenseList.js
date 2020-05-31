@@ -11,7 +11,8 @@ const ExpenseList = props => {
     <div>
       <h2>ExpenseList</h2>
       {props.expenses.map(expense => {
-        return <ExpenseListItem key={expense.id} {...expense} />;
+        console.log(expense)
+        return <ExpenseListItem key={expense.id}   {...expense} />;
       })}
       {props.filters.sortBy}
     </div>
@@ -25,6 +26,5 @@ const mapStateToProps = state => {
     filters: state.filters
   };
 };
-console.log(mapStateToProps)
 
 export default connect(mapStateToProps)(ExpenseList);
