@@ -11,7 +11,6 @@ const ExpenseList = props => {
     <div>
       <h2>ExpenseList</h2>
       {props.expenses.map(expense => {
-        console.log(expense)
         return <ExpenseListItem key={expense.id}   {...expense} />;
       })}
       {props.filters.sortBy}

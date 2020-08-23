@@ -12,13 +12,14 @@ export default [{
    description:'Ofe akwu',
    note:'shut up',
    amount:20000,
-   createdAt:moment(0).subtract(4, 'days').valueOf()
+   createdAt:-1000
 },
 {
    id:'3',
    description:'Ofe Onugbu',
    note:'sweet',
    amount:3000,
-   createdAt:moment(0).add(4, 'days').valueOf()
+   createdAt:1000
 }]
-
+// moment(0).subtract(4, 'days').valueOf()
+// moment(0).add(4, 'days').valueOf()
