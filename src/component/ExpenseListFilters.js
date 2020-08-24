@@ -6,19 +6,19 @@ import {setTextFilter,sortByAmount,sortByDate,setStartDate,setEndDate} from '../
 
 
  class ExpenseListFilters extends Component {
-state = {
-  calenderFocused:null
-}
+        state = {
+          calenderFocused:null
+        }
 
-onDatesChange = ({startDate,endDate})=>{
-        this.props.dispatch(setStartDate(startDate))
-        this.props.dispatch(setEndDate(endDate))
-}
-onFocusChange = (calenderFocused)=>{
-      this.setState(()=> ({
-        calenderFocused
-      }))
-}
+      onDatesChange = ({startDate,endDate})=>{
+              this.props.dispatch(setStartDate(startDate))
+              this.props.dispatch(setEndDate(endDate))
+      }
+      onFocusChange = (calenderFocused)=>{
+            this.setState(()=> ({
+              calenderFocused
+            }))
+      }
 
   render() {
     return (
@@ -61,10 +61,8 @@ onFocusChange = (calenderFocused)=>{
   }
 }
 ;
-const mapStateToProps = state => {
-  return {
+const mapStateToProps = state => ({
     filters: state.filters
-  };
-};
+});
 
 export default connect(mapStateToProps)(ExpenseListFilters);

@@ -1,7 +1,5 @@
 import uuid from "uuid";
 
-//action generators for expenses
-
 export const addExpense = ({
   description = "",
   notes = "",

@@ -12,7 +12,7 @@
     "dev-server": "webpack-dev-server",
     "test": "jest",
     "start": "node server/server.js",
-    "heroku-postbuild":"yarn run build:prod"
+    "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
     "@babel/core": "^7.7.5",
@@ -29,10 +29,10 @@
     "css-loader": "^3.2.1",
     "express": "^4.17.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "jest": "^26.0.1",
     "moment": "^2.24.0",
     "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",
+    "numeral": "^2.0.6",
     "react": "^16.12.0",
     "react-addons-shallow-compare": "^15.6.2",
     "react-dates": "^21.5.1",
@@ -43,10 +43,15 @@
     "redux": "^4.0.4",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.1",
-    "webpack": "^4.41.2",
-    "webpack-dev-server": "^3.11.0"
+    "webpack": "^4.41.2"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.10"
+    "chalk": "^4.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.5.0",
+    "jest": "^26.0.1",
+    "react-test-renderer": "^16.13.1",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.11.0"
   }
 }

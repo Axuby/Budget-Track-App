@@ -7,13 +7,10 @@ export default (expenses, filters) => {
       const startDateMatch = startDate ? startDate.isSameOrBefore(createdAtMoment,'day'): true
         // typeof startDate !== "number" || expense.createdAt >= startDate;
       const endDateMatch = endDate ? endDate.isSameOrAfter(createdAtMoment,'day'): true
-        // typeof endDate !== "number" || expense.createdAt <= endDate;
-        // console.log(endDate.isSameOrAfter)
-        // console.log(startDate)
+        // typeof endDate !== "number" || expense.createdAt <= endDate
       const textMatch = expense.description.toLowerCase().includes(text.toLowerCase());
       return startDateMatch && endDateMatch && textMatch;
     }).sort((a, b) => {
-      console.log(sortBy)
       if (sortBy === "date") {
         return a.createdAt < b.createdAt ? 1 : -1;
       } else if (sortBy === "amount") {
