@@ -40,32 +40,31 @@ export default class ExpenseForm extends Component {
 
   };
   onFocusChange = ({ focused }) => {
-  
     this.setState(() => ({ calendarFocused: focused }));
   };
 
   onSubmit = (e)=>{
-    e.preventDefault()
-    if (!this.state.description || !this.state.amount) {
-      this.setState(()=> ({error:"Please Input a description or amount"}))
-    }else{
-      this.setState(()=>({error:""}));
-      this.props.onSubmit({
-        description:this.state.description,
-        amount:parseFloat(this.state.amount,10) * 100,
-        createdAt:this.state.createdAt.valueOf(),
-        note:this.state.note
-    })
+    e.preventDefault();
+          if (!this.state.description || !this.state.amount) {
+            this.setState(()=> ({error:"Please Input a description or amount"}))
+          } else{
+            this.setState(()=> ({error:""}));
 
-}
+            this.props.onSubmit({
+              description:this.state.description,
+              amount:parseFloat(this.state.amount,10) * 100,
+              createdAt:this.state.createdAt.valueOf(),
+              note:this.state.note})
+
+        }
   }
   render() {
     return (
-      <div>
-        <p>ExpenseForm</p>
+      <div className='ExpenseForm'>
+        <h2>ExpenseForm</h2>
         <div>
-    {this.state.error && <p>{this.state.error}</p>}
-          <form onSubmit={this.onSubmit}>
+         {this.state.error && <p>{this.state.error}</p>}
+          <form  className="form" onSubmit={this.onSubmit}>
             <input
               type="text"
               placeholder="Description"
@@ -92,7 +91,7 @@ export default class ExpenseForm extends Component {
               value={this.state.note}
               onChange={this.onNoteChange}
             ></textarea>
-            <button>Add expense</button>
+            <button className="Add-button" >Add expense</button>
           </form>
         </div>
       </div>
