@@ -3,6 +3,7 @@ import moment from "moment";
 import { SingleDatePicker } from "react-dates";
 import "react-dates/initialize";
 import "react-dates/lib/css/_datepicker.css";
+import '../styles/components/expenseForm.scss'
 
 export default class ExpenseForm extends Component {
   constructor(props) {
@@ -60,7 +61,7 @@ export default class ExpenseForm extends Component {
   }
   render() {
     return (
-      <div className='ExpenseForm'>
+      <div className='expenseForm'>
         <h2>ExpenseForm</h2>
         <div>
          {this.state.error && <p>{this.state.error}</p>}
