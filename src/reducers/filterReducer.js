@@ -1,7 +1,5 @@
 import  moment from 'moment'
 
-
-
 const filterReducerDefault = {
   text: "",
   sortBy: "amount",
