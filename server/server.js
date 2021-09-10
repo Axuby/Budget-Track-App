@@ -1,10 +1,12 @@
 const express = require('express')
+
+
 const app = express()
 const path = require('path')
 const publicPath = path.join(__dirname,'..','public')
 
 app.use(express.static(publicPath))
-const port = process.env.PORT  || 3006
+const port = process.env.PORT  || 3002
 
 const path1 =`${publicPath}/index.html`
 
