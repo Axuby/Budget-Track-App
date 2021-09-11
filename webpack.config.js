@@ -34,7 +34,6 @@ module.exports = (env) => {
             }
           }]
         })
-        //  use: ["style-loader", "css-loader", "sass-loader"]
         }
       ]
     },
@@ -42,7 +41,7 @@ module.exports = (env) => {
       CSSExtract
     ],
 
-    devtool: isProduction ? 'source-map':"inline-source-map",
+    devtool: isProduction ? 'source-map':'inline-source-map',
     devServer: {
       contentBase: path.join(__dirname, "public",'dist'),
       historyApiFallback: true,
