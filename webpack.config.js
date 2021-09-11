@@ -21,7 +21,7 @@ module.exports = (env) => {
         },
         {
           test: /\.s?css$/,
-        use:CSSExtract.extract({
+       use:CSSExtract.extract({
           use:[{
             loader:'css-loader',
             options:{
@@ -42,11 +42,11 @@ module.exports = (env) => {
       CSSExtract
     ],
 
-    devtool: isProduction ? 'source-map':"cheap-module-eval-source-map",
+    devtool: isProduction ? 'source-map':"inline-source-map",
     devServer: {
       contentBase: path.join(__dirname, "public",'dist'),
       historyApiFallback: true,
-      publicPath:'/dist/'
+      publicPath:'/dist/'  
     }
   };
 }
