@@ -6,7 +6,7 @@
   "author": "SAM",
   "license": "MIT",
   "scripts": {
-    "serve":"live-server public/",
+    "serve": "live-server public/",
     "build": "webpack --watch",
     "build:dev": "webpack",
     "build:prod": "webpack -p  --env production",
@@ -51,6 +51,7 @@
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.5.0",
     "jest": "^26.0.1",
+    "live-server": "^1.2.1",
     "react-test-renderer": "^16.13.1",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.11.0"
