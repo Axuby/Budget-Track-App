@@ -9,7 +9,6 @@ import {setTextFilter,sortByAmount,sortByDate,setStartDate,setEndDate} from '../
         state = {
           calenderFocused:null
         }
-
       onDatesChange = ({startDate,endDate})=>{
               this.props.dispatch(setStartDate(startDate))
               this.props.dispatch(setEndDate(endDate))

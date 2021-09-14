@@ -1,19 +1,28 @@
 import uuid  from "uuid"
 
-export  const startLogin = (loginDetails ={
+export  const signup = (signupDetails = {
     name:"",
     password:"",
     email:""
 }) => ({
-    type:"LOGIN_DETAILS",
-    loginDetails: {
+    type:"SIGN_UP",
+    signupDetails: {
         id:uuid(),
-        name,
         password,
+        name,
         email
     }
 })
 
-export const logout = ()=>({
-    type:"LOGOUT"
+export const signin = (signinDetails) => ({
+    type:"SIGN_IN",
+    signinDetails:{
+        name,
+        password
+    }
+})
+
+export const logout = ({id})=>({
+    type:"LOGOUT",
+    id
 })

@@ -1,7 +1,7 @@
-import e from 'express'
 import React from 'react'
 import { connect } from 'react-redux';
-import { startLogin } from '../actions/login';
+import { startLogin } from '../actions/auth';
+import '../styles/components/__login.scss'
 
 function Login({startLogin}) {
 
@@ -21,25 +21,25 @@ function Login({startLogin}) {
                 <form onSubmit={startLogin} className="login-form">
                     <div>
                      <label>
-                            Acolyte
+                            Name
                             <input
                                 type="text"
-                                name="level"
+                                name="Username"
                                 value="acolyte"
                                 onChange={handleChange}
                             />
                             </label>
                             <label>
-                            Master
+                            Email
                             <input
                                 type="text"
-                                name="level"
-                                value="master"
+                                name=""
+                                value="email"
                                 onChange={handleChange}
                             />
                             </label>
                         </div>
-                    <button onClick={onClick}> Login</button>
+                    g<button onClick={onClick}> Login</button>
                 </form>
 
         </div>
@@ -49,4 +49,8 @@ function Login({startLogin}) {
 const mapDispatchToProps = (dispatch)=> {
     startLogin: ()=> dispatch(startLogin())
 }
-export default connect(undefined,mapDispatchToProps)(Login)
+
+const mapStateToProps = state => ({
+    
+})
+export default connect(mapStateToProps,mapDispatchToProps)(Login)

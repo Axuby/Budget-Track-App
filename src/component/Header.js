@@ -1,6 +1,6 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-
+import '../styles/components/Header.scss'
 const Header = () => (
   <header className='header'>
     <h1 className='title'>Expenses</h1>

@@ -15,6 +15,7 @@ h1 {
 
 button {
     cursor: pointer;
+    border-radius: 3px;
 }
 
 button:disabled {
@@ -24,4 +25,5 @@ button:disabled {
 
 .is-active{
     font-weight: bold;
+    
 }

@@ -66,7 +66,7 @@ const book = {
   title: "ego is the enemy",
   author: "ddd",
   publisher: {
-    // name:'Penguin'
+     name:'Penguin'
   }
 };
 

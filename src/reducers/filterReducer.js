@@ -8,6 +8,7 @@ const filterReducerDefault = {
 };
 
 export default (state = filterReducerDefault, action) => {
+
   switch (action.type) {
     case "SET_TEXT_FILTER":
       return {

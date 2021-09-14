@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HelpPage =()=> (
+const HelpPage = ()  => (
     <p>Help mmeeeeeeeeeeeee</p>
 )
 export default HelpPage;

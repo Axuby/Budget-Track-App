@@ -6,11 +6,11 @@ import {addExpense} from '../actions/expenses'
 const AddExpensePage = (props) => {
   console.log(props)
   return (
-    <div>
+    <div className='add-expense'>
       <p>Add Expense</p>
       <ExpenseForm onSubmit={(expense)=>{
-  props.dispatch(addExpense(expense))
-  props.history.push('/')
+          props.dispatch(addExpense(expense))
+          props.history.push('/')
         console.log(expense)
       }}/>
     </div>
