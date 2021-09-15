@@ -1,5 +1,5 @@
 # Budget-Track-App
-An app that helps you keep track of your expenses, built with React, Redux, JavaScript, and CSS.
+An app that helps you keep track of your expenses, built with React, Redux, JavaScript, and SCSS.
 
 ## Project Status
 
