@@ -1,13 +1,11 @@
 import React from 'react'
 import { connect } from 'react-redux';
-import { startLogin } from '../actions/auth';
+import { signin,signup } from '../actions/auth';
 import '../styles/components/__login.scss'
 
-function Login({startLogin}) {
+function Login({signin}) {
 
     function onClick(e) {
-
-        
             e.preventDefault();
       }
 
@@ -47,7 +45,7 @@ function Login({startLogin}) {
 }
 
 const mapDispatchToProps = (dispatch)=> {
-    startLogin: ()=> dispatch(startLogin())
+    signin: ()=> dispatch(signin())
 }
 
 const mapStateToProps = state => ({

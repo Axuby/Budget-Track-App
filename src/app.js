@@ -6,6 +6,7 @@ import configStore from "./store/configureStore";
 import { addExpense } from "./actions/expenses";
 import { setTextFilter } from "./actions/filters";
 import getVisibleExpenses from "./selectors/expensesSelector";
+import FirebaseProvider from './firebaseIntegration/firebase'
 import "normalize.css/normalize.css";
 import "./styles/styles.scss";
 import 'react-dates/lib/css/_datepicker.css';
@@ -24,7 +25,9 @@ console.log(store.getState());
 
 const Jsx = () => (
   <Provider store={store}>
-    <AppRouter />
+    {/* <FirebaseProvider> */}
+       <AppRouter />
+    {/* </FirebaseProvider> */}
   </Provider>
 );
 

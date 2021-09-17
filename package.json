@@ -6,7 +6,7 @@
   "author": "SAM",
   "license": "MIT",
   "scripts": {
-    "serve":"live-server public/",
+    "serve": "live-server public/",
     "build": "webpack --watch",
     "build:dev": "webpack",
     "build:prod": "webpack -p  --env production",
@@ -30,6 +30,7 @@
     "css-loader": "^3.2.1",
     "express": "^4.17.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "firebase": "^9.0.2",
     "moment": "^2.24.0",
     "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",

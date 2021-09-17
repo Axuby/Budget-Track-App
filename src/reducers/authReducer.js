@@ -1,6 +1,6 @@
-const authReducerReducer = []
+const authReducerDefault = []
 
-export default (state = authReducerReducer, action)=> {
+export default (state = authReducerDefault, action)=> {
 
         switch (action) {
             case "SIGN_IN":
