@@ -1,6 +1,6 @@
 .expenseForm{
     text-align: center;
-    background-color: deeppink;
+    background-color:  #ff5100;
     color: rgb(0, 0, 0);
     margin: 20px;
     padding: 20px;
@@ -13,7 +13,7 @@
     border-radius: 20px;
     margin: 40px;
     padding: 40px;
-    background-color: blue;
+    background-color:grey;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,7 +22,23 @@
 
 .title{
     text-align: center;
+    color: black;
+    
 }
 
+ button{
+     cursor: pointer;
+     border-radius: 2.5px;
+     border: 1px solid blue;
+     text-align: center;
+     width:150px;
+     color: black;
+
+     &:hover{
+         background-color: blue;
+         color: grey;
+
+     }
+ }
 
 

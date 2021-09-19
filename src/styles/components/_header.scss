@@ -5,25 +5,46 @@
     flex-direction: row;
     padding: 10px;
     margin: 10px;
-    align-self: stretch;
+    text-align: center;
+    justify-content: space-between;
+}
 
-    .title{
+  .title{
         padding: 10px;
         margin: 5px;
     }
-}
-
-
-.is-active{
-    padding: 10px;
-    margin: 10px;
-    color: black;
-}
-
-NavLink{
-    padding: 10px;
-    margin: 10px;
+    .nav{
+        margin-right: 10px; 
+        text-decoration: none;
+        text-align: center;
+        color: wheat;
+        
+        &:hover{
+            color: blue ;
+        }
+    }
+.nav-link{
+    margin-top: 20px;
+    text-decoration: none;
+    font-size:15px;
+    text-align: center;
     display: flex;
-    align-self: center;
+    justify-content: space-between;
+    align-items: stretch;
+
+
+    .is-active{
+    color:blue;
+
 }
+
+}
+
+
+// NavLink{
+//     padding: 10px;
+//     margin: 10px;
+//     display: flex;
+//     align-self: center;
+// }
 

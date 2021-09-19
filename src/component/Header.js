@@ -4,21 +4,24 @@ import '../styles/components/_header.scss'
 const Header = () => (
   <header className='header'>
     <h1 className='title'>Track Your Expenses/Budgets</h1>
-      <NavLink to="/login" activeClassName="is-active">
+    
+    <div class='nav-link'>
+        <NavLink to="/login" className="nav" activeClassName="is-active">
       Login
     </NavLink>
-    <NavLink to="/" activeClassName="is-active">
+    <NavLink to="/" className="nav" activeClassName="is-active">
       Dashboard
     </NavLink>
-    <NavLink to="/create" activeClassName="is-active">
+    <NavLink to="/create"  className="nav" activeClassName="is-active">
       Create Expense
     </NavLink>
-    <NavLink to="/edit" activeClassName="is-active">
+    <NavLink to="/edit"  className="nav" activeClassName="is-active">
       Edit Expense
     </NavLink>
-    <NavLink to="/help" activeClassName="is-active">
+    <NavLink to="/help" className="nav" activeClassName="is-active">
       Help
     </NavLink>
+    </div>
   </header>
 );
 export default Header;
