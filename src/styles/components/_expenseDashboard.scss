@@ -2,4 +2,11 @@
     background-color: purple;
     display: flex;
     flex-direction: column;
+    margin: auto 10px;
+    width: auto;
+    height: 900px; 
+    width: 100%;
+  justify-content: space-around;
+  align-self: flex-start;
+  padding: 30px;
 }

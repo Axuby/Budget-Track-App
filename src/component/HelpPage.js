@@ -1,6 +1,6 @@
 import React from 'react'
 
 const HelpPage = ()  => (
-    <p>Help mmeeeeeeeeeeeee</p>
+    <p class="Help">Help mmeeeeeeeeeeeee</p>
 )
 export default HelpPage;
