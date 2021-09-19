@@ -2,7 +2,8 @@
     text-align: center;
     background-color: deeppink;
     color: rgb(0, 0, 0);
-    margin: 50%;
+    margin: 20px;
+    padding: 20px;
     position: relative;
     top: 10px;
     left:10px;
@@ -11,7 +12,16 @@
 .form{
     border-radius: 20px;
     margin: 40px;
+    padding: 40px;
     background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.title{
+    text-align: center;
 }
 
 

@@ -3,20 +3,23 @@ import { connect } from 'react-redux';
 import { signin,signup } from '../actions/auth';
 import '../styles/components/__login.scss'
 
+
+
+
 function Login({signin}) {
 
     function onClick(e) {
             e.preventDefault();
       }
 
-      const handleChange = (e)=> {
+    const handleChange = (e)=> {
         const value = e.target.value
 
       }
     return (
         <div>
-            <p>Login Page</p>
-                <form onSubmit={startLogin} className="login-form">
+            <p>Login Page</p> 
+                <form onSubmit={signin} className="login-form">
                     <div>
                      <label>
                             Name
